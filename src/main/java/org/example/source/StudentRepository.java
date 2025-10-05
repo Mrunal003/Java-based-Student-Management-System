@@ -1,7 +1,12 @@
 package org.example.source;
 
-import java.util.*;
-public class StudentRepository implements StudentService{
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class StudentRepository implements StudentService {
+
   private Map<Integer, Student> studentMap = new HashMap<>();
 
   @Override
@@ -10,7 +15,7 @@ public class StudentRepository implements StudentService{
   }
 
   @Override
-  public List<Student> getAllStudents(){
+  public List<Student> getAllStudents() {
     return new ArrayList<>(studentMap.values());
   }
 
