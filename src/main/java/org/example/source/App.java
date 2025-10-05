@@ -22,7 +22,6 @@ public class App implements AppInterface {
     System.out.println("Delete student : 3");
     System.out.println("Read student : 4");
 
-
     while (true) {
       System.out.print("Enter Number: ");
       if (!app.sc.hasNextInt()) {
