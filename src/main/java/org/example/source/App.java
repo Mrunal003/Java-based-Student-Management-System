@@ -25,9 +25,8 @@ public class App implements AppInterface {
     while (true) {
       System.out.print("Enter Number: ");
       if (!app.sc.hasNextInt()) {
-        System.out.println("Invalid input. Please enter a number.");
-        app.sc.next(); // Consume invalid input
-        continue;
+        System.out.println("No input available. Exiting.");
+        exit(0);
       }
       int input = app.sc.nextInt();
       app.sc.nextLine(); // Consume newline
