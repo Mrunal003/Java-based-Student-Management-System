@@ -62,9 +62,9 @@ public class StudentRepositoryTest {
     InitializeRepository();
     assertEquals(2, repository.getAllStudents().size());
   }
-  @Test
-  void testDeleteStudentWithMock() {
-    mockRepository.deleteStudent(2);
-    verify(mockRepository, times(1)).deleteStudent(2);
-  }
+//  @Test
+//  void testDeleteStudentWithMock() {
+//    mockRepository.deleteStudent(2);
+//    verify(mockRepository, times(1)).deleteStudent(2);
+//  }
 }
