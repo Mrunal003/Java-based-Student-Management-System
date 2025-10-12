@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sms
-          image: docker.io/<DOCKERHUB_USERNAME>/student-management-system:latest
+          image: docker.io/mrunalvekariya/student-management-system:latest
           imagePullPolicy: Always
           # If your app listens on a port (not true for current CLI),
           # expose it here and in the Service, e.g.:
