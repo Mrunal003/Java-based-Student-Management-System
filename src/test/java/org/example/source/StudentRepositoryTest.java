@@ -60,7 +60,7 @@ public class StudentRepositoryTest {
   @Test
   void testShowStudent(){
     InitializeRepository();
-    assertEquals(1, repository.getAllStudents().size());
+    assertEquals(2, repository.getAllStudents().size());
   }
 
   @Test
