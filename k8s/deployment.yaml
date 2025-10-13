@@ -18,11 +18,3 @@ spec:
         - name: sms
           image: docker.io/mrunalvekariya/student-management-system:latest
           imagePullPolicy: Always
-          # If your app listens on a port (not true for current CLI),
-          # expose it here and in the Service, e.g.:
-          # ports:
-          #   - containerPort: 8080
-          # If the app exits immediately, it will restart. That's expected for a CLI app.
-      # If your Docker Hub repo is PRIVATE, uncomment the next lines and create the secret in step 3.
-      # imagePullSecrets:
-      #   - name: dockerhub-secret
