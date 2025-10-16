@@ -9,9 +9,9 @@ pipeline {
         }
 
         stage('Docker Build and Push') {
-            when {
-                expression { return false } // disable in Jenkins
-            }
+            // when {
+            //     expression { return false } // disable in Jenkins
+            // }
             steps {
                 sh 'docker build -t mrunalvekariya/student-management-system:latest .'
                 sh 'docker push mrunalvekariya/student-management-system:latest'
